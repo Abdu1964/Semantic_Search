@@ -26,6 +26,10 @@ def hamming_distance(str1, str2):
     str2 = str2.ljust(max_len)
     return hamming(list(str1), list(str2)) * max_len
 
+# Inner/Dot Product
+def dot_product(vec1, vec2):
+    return np.dot(vec1, vec2)
+
 # Example Vectors and Sets
 vec1 = np.array([1, 2, 3])
 vec2 = np.array([4, 5, 6])
@@ -39,3 +43,4 @@ print("Cosine Similarity:", cosine_similarity(vec1, vec2))
 print("Euclidean Distance:", euclidean_distance(vec1, vec2))
 print("Jaccard Similarity:", jaccard_similarity(set1, set2))
 print("Hamming Distance:", hamming_distance(str1, str2))
+print("Dot Product:", dot_product(vec1, vec2))
